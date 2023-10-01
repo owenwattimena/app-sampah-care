@@ -1,3 +1,9 @@
+import '/app/models/tanggapan.dart';
+import '/app/models/total_pengaduan.dart';
+import '/app/networking/report_api_service.dart';
+import '/app/models/pengaduan.dart';
+import '/app/models/api_return_value.dart';
+import '/app/networking/user_api_service.dart';
 import 'package:flutter_app/app/models/user.dart';
 import 'package:flutter_app/app/networking/dio/base_api_service.dart';
 import '/app/networking/api_service.dart';
@@ -19,6 +25,22 @@ final Map<Type, dynamic> modelDecoders = {
   User: (data) => User.fromJson(data),
 
   // User: (data) => User.fromJson(data),
+
+  List<ApiReturnValue>: (data) => List.from(data).map((json) => ApiReturnValue.fromJson(json)).toList(),
+
+  ApiReturnValue: (data) => ApiReturnValue.fromJson(data),
+
+  List<Pengaduan>: (data) => List.from(data).map((json) => Pengaduan.fromJson(json)).toList(),
+
+  Pengaduan: (data) => Pengaduan.fromJson(data),
+
+  List<TotalPengaduan>: (data) => List.from(data).map((json) => TotalPengaduan.fromJson(json)).toList(),
+
+  TotalPengaduan: (data) => TotalPengaduan.fromJson(data),
+
+  List<Tanggapan>: (data) => List.from(data).map((json) => Tanggapan.fromJson(json)).toList(),
+
+  Tanggapan: (data) => Tanggapan.fromJson(data),
 };
 
 /*
@@ -36,4 +58,10 @@ final Map<Type, BaseApiService> apiDecoders = {
   ApiService: ApiService(),
 
   // ...
+
+  UserApiService: UserApiService(),
+
+  ReportApiService: ReportApiService(),
 };
+  
+  

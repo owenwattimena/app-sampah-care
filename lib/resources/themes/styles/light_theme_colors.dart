@@ -8,11 +8,13 @@ import '/resources/themes/styles/color_styles.dart';
 */
 
 class LightThemeColors implements ColorStyles {
+  Color get textGrey => const Color(0xFF838383);
+  Color get secondaryAccent=> const Color(0xFFDBA210);
   // general
   Color get background => const Color(0xFFFFFFFF);
 
-  Color get primaryContent => const Color(0xFF000000);
-  Color get primaryAccent => const Color(0xFF0045a0);
+  Color get primaryContent => const Color(0xFF5F49DA);
+  Color get primaryAccent => const Color(0xFF7D66F8);
 
   Color get surfaceBackground => Colors.white;
   Color get surfaceContent => Colors.black;
@@ -22,7 +24,7 @@ class LightThemeColors implements ColorStyles {
   Color get appBarPrimaryContent => Colors.white;
 
   // buttons
-  Color get buttonBackground => Colors.blueAccent;
+  Color get buttonBackground => const Color(0xFF5F49DA);
   Color get buttonPrimaryContent => Colors.white;
 
   // bottom tab bar

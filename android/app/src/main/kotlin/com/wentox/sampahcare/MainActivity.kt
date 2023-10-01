@@ -1,4 +1,4 @@
-package com.nylo.android
+package com.wentox.sampahcare
 
 import io.flutter.embedding.android.FlutterActivity
 

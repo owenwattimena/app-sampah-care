@@ -6,6 +6,11 @@ import 'package:nylo_framework/nylo_framework.dart';
 /// light_theme_colors.dart and dark_theme_colors.dart.
 ///
 abstract class ColorStyles extends BaseColorStyles {
+  /// * Custom Stle *
+  // text
+  Color get textGrey;
+  Color get secondaryAccent;
+
   /// * Available styles *
 
   // general
